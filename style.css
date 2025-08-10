@@ -21,8 +21,9 @@ body{
 
 .cartao {
     position: relative;
-    width: 350px;
-    min-height: 600px;
+    width: 100%;
+    min-height: 550px;
+    max-width: 480px;
     background-color: #804928; /* marrom */
     border-radius: 8px;
     overflow: hidden;
@@ -35,13 +36,6 @@ body{
 
 .logo{
     width: 50px;
-}
-
-@media(max-width: 425px){
-    .cartao{
-        width: 100%;
-        height: 100%;
-    }
 }
 
 .curva {
