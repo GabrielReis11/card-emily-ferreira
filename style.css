@@ -22,7 +22,7 @@ body{
 .cartao {
     position: relative;
     width: 100%;
-    min-height: 550px;
+    min-height: 575px;
     max-width: 480px;
     background-color: #804928; /* marrom */
     border-radius: 8px;
