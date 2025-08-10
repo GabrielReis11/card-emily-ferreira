@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lastri';
+    src: url('fonts/Lastri.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.cartao {
+    position: relative;
+    width: 350px;
+    min-height: 600px;
+    background-color: #804928; /* marrom */
+    border-radius: 8px;
+    overflow: hidden;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+.logo{
+    width: 50px;
+}
+
+@media(max-width: 425px){
+    .cartao{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.curva {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%; /* Aumenta a largura do semicírculo para preencher toda a parte de cima */
+    height: 140px;
+    background-color: #ece3da; /* Bege */
+    border-bottom-left-radius: 100% 100%;
+    border-bottom-right-radius: 100% 100%;
+    z-index: 1;
+}
+
+.img-bg{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.foto-container {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #804928;
+    background-color: #804928;
+}
+
+.foto-emily {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infos {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.nome {
+    font-family: 'Lastri', sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    margin:0;
+    color: #EEE5DC;
+}
+
+.cargo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 0.75rem;
+    letter-spacing: 6px;
+    color: #EEE5DC;
+    margin-bottom: 0;
+}
+.chamada{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #EEE5DC;
+    margin-top: 16px;
+}
+.card {
+    background-color: #814928 !important;
+}
+
+small{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #EEE5DC;
+}
+
+.map-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ece3da;
+    color: #804928;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.map-btn i {
+    font-size: 1rem; /* Ícone grande */
+}
+
+.map-btn span {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.map-btn:hover {
+    background-color: #c19a8a; /* Tom mais escuro ao passar o mouse */
+    color: #fff;
+}
+
+.social-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ece3da;
+    color: #804928;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-circle:hover {
+    background-color: #c19a8a;
+    color: #fff;
+}
+
+
